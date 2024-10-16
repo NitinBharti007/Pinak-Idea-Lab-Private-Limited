@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    /* Animation for rotating the card on hover */
+    .rotate-box:hover {
+      transform: rotate(360deg);
+      transition: transform 0.5s ease-in-out;
+    }
+
+    /* Matching background color */
+    .custom-bg {
+      background-color: #F7F8FB; /* Light gray-blue background similar to the image */
+    }
+
+    /* Icon styling for the half-inside half-outside effect */
+    .icon-container {
+      position: absolute;
+      top: -40px; /* Moves the icon upwards */
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #6B21A8; /* Purple background for the icon */
+      padding: 20px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body class="custom-bg">
+  <div id="assignment" class="bg-purple-900 text-white py-8">
+    <h1 class="text-center text-4xl font-bold">OUR SERVICES</h1>
+  </div>
+
+  <div class="container mx-auto py-12 px-6 md:px-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+      <!-- Card 1 -->
+      <div class="relative rotate-box bg-white shadow-md rounded-lg p-6 text-center transition-transform border-t-4 border-purple-900">
+        <div class="icon-container">
+          <i class="fas fa-tools text-5xl text-white"></i>
+        </div>
+        <h2 class="text-xl font-bold mb-2 mt-16">Emergency Plumbing Services</h2>
+        <p class="text-gray-700 mb-4">
+          Our plumbers are ready to go 24/7 for emergencies - including nights, weekends, and holidays.
+        </p>
+        <a class="text-purple-900 font-bold hover:underline" href="#">
+          EXPLORE THIS SERVICE <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="relative rotate-box bg-white shadow-md rounded-lg p-6 text-center transition-transform border-t-4 border-purple-900">
+        <div class="icon-container">
+          <i class="fas fa-wrench text-5xl text-white"></i>
+        </div>
+        <h2 class="text-xl font-bold mb-2 mt-16">Plumbing and Drains</h2>
+        <p class="text-gray-700 mb-4">
+          As the largest plumbing and drain service company, we make thousands of repairs every day.
+        </p>
+        <a class="text-purple-900 font-bold hover:underline" href="#">
+          EXPLORE THIS SERVICE <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="relative rotate-box bg-white shadow-md rounded-lg p-6 text-center transition-transform border-t-4 border-purple-900">
+        <div class="icon-container">
+          <i class="fas fa-water text-5xl text-white"></i>
+        </div>
+        <h2 class="text-xl font-bold mb-2 mt-16">Water Damage</h2>
+        <p class="text-gray-700 mb-4">
+          Our teams are equipped with state-of-the-art water extraction and cleanup equipment.
+        </p>
+        <a class="text-purple-900 font-bold hover:underline" href="#">
+          EXPLORE THIS SERVICE <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="relative rotate-box bg-white shadow-md rounded-lg p-6 text-center transition-transform border-t-4 border-purple-900">
+        <div class="icon-container">
+          <i class="fas fa-burn text-5xl text-white"></i>
+        </div>
+        <h2 class="text-xl font-bold mb-2 mt-16">Water Heaters</h2>
+        <p class="text-gray-700 mb-4">
+          Trust Roto-Rooter for repair and replacement of gas, electric, and tankless water heaters.
+        </p>
+        <a class="text-purple-900 font-bold hover:underline" href="#">
+          EXPLORE THIS SERVICE <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      
+    </div>
+  </div>
+
+  <script>
+    // Simple hover animation using JavaScript
+    document.querySelectorAll('.rotate-box').forEach(box => {
+      box.addEventListener('mouseenter', () => {
+        box.classList.add('rotate-360');
+      });
+      box.addEventListener('mouseleave', () => {
+        box.classList.remove('rotate-360');
+      });
+    });
+  </script>
+</body>
+</html>
